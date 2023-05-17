@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FORM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">Welcome</div>
+        <div class="intro">Let's create your account!</div>
+        <div class="contact">
+            <div class="box-1">
+                <input type="text" id="name" placeholder="First Name">
+            </div>
+            <div class="box-1">
+                <input type="text" id="last name" placeholder="Last Name">
+            </div>
+            <div class="box-1">
+                <input type="text" id="email" placeholder="Email">
+            </div>
+            <select name="student" id="studuent" class="choose">
+                <option value="Student"> Student </option>
+                <option value="Frontend"> Frontend </option>
+                <option value="Backend"> Backend </option>
+                <option value="Php"> Php </option>
+            </select>
+
+            <p class="radio">Batch</p>
+            <div class="radio-123">
+                <input type="radio" id="radio" name="click one" value="Noon">
+                <label for="Noon">Noon</label>  
+                <input type="radio" id="radio" name="click one" value="Evening">
+                <label for="Evening">Evening</label>  
+            </div>
+             <div class="mark">
+                <input type="checkbox" id="checkbox" name="mark me" value="Remember me">
+                <label for="Remember me"> Remember me</label>    
+             </div>
+             <button onclick="add()" class="btn-white">Submit</button>
+
+        </div>
+    </div>
+    <script>
+        function add() {
+            var a = document.querySelectorAll("input");
+            a.forEach(index => {
+            document.write(index.value);
+            })
+        }
+    </script>
+</body>
+</html>
